@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Web programming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3391/3391036.png">
+
+    <style>
+        body {
+            align-items: center;
+            display: flex;
+            background: linear-gradient(180deg, #1655d9, #377ed9, #0A7FA1FF);
+            font-family: "HelveticaforTarget", serif;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        .repos {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.01);
+            border-radius: 16px;
+            flex-basis: 400px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 31px;
+            margin-bottom: 40px;
+        }
+
+        .works {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button {
+            background-color: #377ed9;
+            color: white;
+            padding: 30px 40px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1655d9;
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="repos">
+    <h1>Completed works</h1>
+
+    <div class="works">
+        <button onclick="location.href='02_Lists_Multimedia_Tables/index.html'">02. Lists, Multimedia and Tables</button>
+    </div>
+</section>
+
+</body>
+</html>
