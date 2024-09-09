@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <title>Venta de carros</title>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/02/56/94/74/360_F_256947432_mW9bJpGFdJo9kw9XovizaHcQI2NOVXc8.jpg">
+
+    <style>
+
+        body {
+            background: linear-gradient(180deg, #992bba, #3296d0, #2882e9);
+            font-family: sans-serif;
+        }
+
+        .centro {
+            display: flex;
+            justify-content: center;
+        }
+
+        #formulario {
+            border: solid;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+    </style>
+
+</head>
+<body>
+<h1 class="centro">Venta de Carros</h1>
+<q class="centro">Conduce tu sueño</q>
+<nav>
+    <a href="#modelos">Modelos disponibles</a>
+    <a href="https://www.toyota.com/" target="_blank" rel="noreferrer">Visita Toyota</a>
+    <a href="https://www.honda.com/" target="_blank" rel="noreferrer">Visita Honda</a>
+    <a href="https://www.mazda.mx/" target="_blank" rel="noreferrer">Visita Mazda</a>
+</nav>
+
+<hr>
+
+<main>
+    <video style="max-width: 100%; width: auto; height: auto" loop autoplay muted src="https://videos.pexels.com/video-files/5309381/5309381-hd_1920_1080_25fps.mp4"></video>
+    <hr>
+    <h2 class="centro">Los Mejores Autos para Ti</h2>
+    <p>En nuestra tienda encontrarás una selección de los mejores <strong>autos</strong> nuevos y usados. Disponemos de una amplia gama de <i>modelos</i> y <u>marcas</u> reconocidas.</p>
+
+    <blockquote id="frase">
+        "Un auto nuevo es una inversión que te brinda comodidad, seguridad y estilo."
+    </blockquote>
+
+    <div id="modelos">
+        <h3>Modelos Disponibles</h3>
+        <p>Tenemos <mark>autos</mark> compactos, sedanes, SUV y <small>camionetas</small> para todo tipo de necesidades.</p>
+        <p>Precios desde <del>$35,000</del> <ins>$20,500</ins>.</p>
+
+        <ul>
+            <li>Toyota Corolla</li>
+            <li>Honda Civic</li>
+            <li>Chevrolet Aveo</li>
+            <li>Ford Explorer</li>
+            <li>Chevrolet Silverado</li>
+        </ul>
+
+        <ol>
+            <li>Toyota Corolla</li>
+            <li>Honda Civic</li>
+            <li>Chevrolet Aveo</li>
+            <li>Ford Explorer</li>
+            <li>Chevrolet Silverado</li>
+        </ol>
+    </div>
+
+    <a href="https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80">
+        <img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80" alt="Fronx Carro" title="Este carro puede ser tuyo" style="max-width: 100%; width:auto;height:auto">
+    </a>
+
+    <p>Ofrecemos descuentos del <sup>10%</sup> para compradores nuevos. ¡Pregunta por nuestros planes de financiamiento!</p>
+
+    <section id="formulario">
+        <h3>Formulario para cotizar tu auto favorito</h3>
+        <form method="post">
+            <fieldset>
+                <legend>Ingresa los datos</legend>
+
+                <div>
+                    <label>Marca
+                        <input type="text" placeholder="Eje. Mazda" required>
+                    </label>
+                    <br>
+                    <label>Escribe por que deseas el auto
+                        <textarea required placeholder="Escribe tu razon"></textarea>
+                    </label>
+                    <br>
+
+                    <label>Contacto
+                        <input type="tel" placeholder="Eje. 624 123 1232" required pattern="[0-9]{9}">
+                    </label>
+                    <br>
+
+                    <label> Uso del carro
+                        <input minlength="5" maxlength="15" type="text" list="uso" required>
+                        <datalist id="uso">
+                            <option>Domestico</option>
+                            <option>Negocios</option>
+                        </datalist>
+                    </label>
+                    <br>
+
+                    <label> Ingresa tu pais
+                        <select>
+                            <option value="mex" selected>México</option>
+                            <option value="usa">Estados Unidos</option>
+                            <option value="col">Colombia</option>
+                            <option value="arg">Argentina</option>
+                        </select>
+                    </label>
+
+                </div>
+
+                <input type="submit" value="Enviar informacion">
+            </fieldset>
+        </form>
+    </section>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/l0TLgCZAwns?si=Wt-_vIjEltYfxIYH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div>
+        <h2>Tablas</h2>
+        <table border="1" cellspacing="5" cellpadding="10" width="80%">
+            <caption>Carros</caption>
+            <thead>
+            <tr>
+                <th>Carro</th>
+                <th>Modelo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Chevrolet</td>
+                <td>Aveo</td>
+            </tr>
+            <tr>
+                <td>Mazda</td>
+                <td>Sedan 3</td>
+            </tr>
+            <tr>
+                <td>Chevrolet</td>
+                <td>Camaro</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+<hr>
+
+<footer>
+    <h2>Contáctanos</h2>
+    <p>Para más información, <em>visita nuestra tienda o llámanos al <kbd>+52 123 456 7890</kbd></em>.</p>
+</footer>
+
+</body>
+</html>
