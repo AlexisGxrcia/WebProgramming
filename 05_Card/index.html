@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://png.pngtree.com/template/20200506/ourmid/pngtree-road-sign-car-logo-design-image_369728.jpg">
+    <title>Car Deal</title>
+
+    <style>
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('../font/Helvetica.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: "Helvetica", sans-serif;
+            margin: 0;
+        }
+
+        #menu-container {
+            padding: 10px 20px;
+            background: #377ed9;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            line-height: 80px;
+            margin: 0 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            margin: 0 40px;
+            list-style: none;
+        }
+
+        .center {
+            display: flex;
+            margin: 40px;
+            justify-content: center;
+        }
+
+        #cards-cars {
+            flex-wrap: wrap;
+            display: flex;
+            gap: 30px;
+            margin: 20px;
+        }
+
+        .card {
+            background: #69a2dc;
+            border: 1px solid rgba(255, 255, 255, 0.01);
+            border-radius: 16px;
+            padding: 3px;
+            transition: transform 0.6s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            border-radius: 16px;
+            width: 300px;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .card-container {
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card-container h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-container p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .card-button {
+            display: inline-block;
+            background-color: #fff;
+            color: black;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header id="menu-container">
+        <nav class="nav-bar">
+            <img src="https://png.pngtree.com/template/20200506/ourmid/pngtree-road-sign-car-logo-design-image_369728.jpg" alt="Logo" title="Logo" style="height: 70px">
+
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="#">Inventario</a></li>
+                <li><a class="nav-link" href="#">Cotizar</a></li>
+                <li><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="inventory">
+            <h2 class="center">Inventario</h2>
+
+            <div id="cards-cars">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuGlwmQQMyFexV9JzUnkpTGN4r5-Wsb6Tcnw&s" alt="Carro Chevrolet aveo 2016" title="Aveo">
+                    <div class="card-container">
+                        <h4>Aveo 2016</h4>
+                        <p>Pide tu cotizacion ya!</p>
+                        <a href="#" class="card-button">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://conduciendo.com/wp-content/uploads/2020/01/Chevrolet-Camaro-020120-05.jpg" alt="Carro Chevrolet Camaro 2020" title="Camaro">
+                    <div class="card-container">
+                        <h4>Camaro 2020</h4>
+                        <p>Pide tu cotizacion ya!</p>
+                        <a href="#" class="card-button">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_4c0d339f56b74a84b4813d9aaa0468d9.jpg" alt="Carro Sedan 3 2024" title="Sedan 3">
+                    <div class="card-container">
+                        <h4>Sedan 3</h4>
+                        <p>Pide tu cotizacion ya!</p>
+                        <a href="#" class="card-button">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
