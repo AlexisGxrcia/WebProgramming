@@ -50,9 +50,14 @@
             justify-content: center;
         }
 
+        a:hover {
+            color: black;
+        }
+
         #cards-cars {
             flex-wrap: wrap;
             display: flex;
+            justify-content: space-around;
             gap: 30px;
             margin: 20px;
         }
@@ -60,9 +65,10 @@
         .card {
             background: #69a2dc;
             border: 1px solid rgba(255, 255, 255, 0.01);
+            box-shadow: 0 0 5px;
             border-radius: 16px;
             padding: 3px;
-            transition: transform 0.6s;
+            transition: transform 0.4s;
         }
 
         .card:hover {
@@ -70,7 +76,7 @@
         }
 
         .card img {
-            border-radius: 16px;
+            border-radius: 8px;
             width: 300px;
             height: 280px;
             object-fit: cover;
@@ -139,7 +145,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_4c0d339f56b74a84b4813d9aaa0468d9.jpg" alt="Carro Sedan 3 2024" title="Sedan 3">
+                    <img src="https://acnews.blob.core.windows.net/imgnews/medium/NAZ_19d94d973bfb4614a20cfbbabf193f7e.webp" alt="Carro Sedan 3 2024" title="Sedan 3">
                     <div class="card-container">
                         <h4>Sedan 3</h4>
                         <p>Pide tu cotizacion ya!</p>

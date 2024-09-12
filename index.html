@@ -18,13 +18,12 @@
             background: linear-gradient(320deg, #1655d9, #377ed9, #0A7FA1FF);
             align-items: center;
             justify-content: center;
-            display: flex;
             font-family: "Helvetica", serif;
             height: 100vh;
+            display: flex;
         }
 
         .repos {
-            backdrop-filter: blur(10px);
             background: rgba(255, 255, 255, 0.55);
             border: 1px solid rgba(255, 255, 255, 0.01);
             border-radius: 16px;
@@ -39,11 +38,6 @@
             padding: 20px;
         }
 
-        h1 {
-            font-size: 31px;
-            margin-bottom: 40px;
-        }
-
         .works {
             width: 100%;
             display: flex;
@@ -51,6 +45,16 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
+        }
+
+        .repos h1 {
+            font-size: 31px;
+            margin: 10px;
+        }
+
+        .repos p {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
 
         button {
@@ -63,9 +67,11 @@
             font-weight: bold;
             height: auto;
             width: 75%;
+            transition: transform 0.4s;
         }
 
         button:hover {
+            transform: translateY(-5px) translateX(5px);
             background-color: #1655d9;
         }
 
@@ -73,17 +79,18 @@
 </head>
 <body>
 
-<section class="repos">
-    <h1>Completed works</h1>
+    <main class="repos">
+        <h1>Completed works</h1>
+        <p>By Alexis Garcia</p>
 
-    <div class="works">
-        <button onclick="location.href='01_Web_With_Basic_Elements/index.html'">01. Web With Basic Elements</button>
-        <button onclick="location.href='02_Lists_Multimedia_Tables/index.html'">02. Lists, Multimedia and Tables</button>
-        <button onclick="location.href='03_Forms_and_Metadata/index.html'">03. Form and Metadata</button>
-        <button onclick="location.href='04_Decoration/index.html'">04. Text formatting, fonts, backgrounds and borders</button>
-        <button onclick="location.href='05_Card/index.html'">05. Cards</button>
-    </div>
-</section>
+        <div class="works">
+            <button onclick="location.href='01_Web_With_Basic_Elements/index.html'">01. Web With Basic Elements</button>
+            <button onclick="location.href='02_Lists_Multimedia_Tables/index.html'">02. Lists, Multimedia and Tables</button>
+            <button onclick="location.href='03_Forms_and_Metadata/index.html'">03. Form and Metadata</button>
+            <button onclick="location.href='04_Decoration/index.html'">04. Text formatting, fonts, backgrounds and borders</button>
+            <button onclick="location.href='05_Card/index.html'">05. Cards</button>
+        </div>
+    </main>
 
 </body>
 </html>
