@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('font/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "Helvetica", sans-serif;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(320deg, #000853, #1cb5e0) no-repeat fixed;
+    background-size: cover;
+    filter: blur(15);
+}
+
+.header {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.repositories-section {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+}
+
+.repositories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.repositories button {
+    background-color: #3a636e;
+    width: 75%;
+    color: white;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: rgba(3, 9, 77, 0.65);
+}
+
