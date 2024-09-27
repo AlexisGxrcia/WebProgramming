@@ -17,6 +17,7 @@ body {
     background: linear-gradient(320deg, #000853, #1cb5e0) no-repeat fixed;
     background-size: cover;
     filter: blur(15);
+    width: 100%;
 }
 
 .header {
@@ -45,6 +46,7 @@ body {
     max-width: 400px;
     height: auto;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
 .repositories {
