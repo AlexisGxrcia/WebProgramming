@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Change Color</title>
+
+    <style>
+        main {
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+            transition: all .3s linear;
+
+            &:hover {
+                background-color: black;
+                color: white;
+                transform: scale(1.02);
+            }
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Cambiar color</h1>
+        <div class="button-container">
+            <button class="button">red</button>
+            <button class="button">green</button>
+            <button class="button">blue</button>
+            <button class="button">white</button>
+        </div>
+    </main>
+
+    <script>
+        const buttons = document.querySelectorAll('.button')
+        buttons.forEach(b => b.addEventListener('click', () => document.querySelector('body').style.background = b.innerHTML));
+    </script>
+</body>
+</html>
