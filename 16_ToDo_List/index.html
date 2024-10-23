@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="add-task">
+        <i class="fas fa-times close-icon"></i>
+        <h1>Add Task</h1>
+
+        <label> Task
+            <input id="input-task" type="text" maxlength="20">
+        </label>
+
+        <ul id="select-category">
+            <li data-id="all" class="label-all">All</li>
+            <li data-id="fav" class="label-all label-fav">Favourites</li>
+            <li data-id="gro" class="label-all label-gro">Groceries</li>
+            <li data-id="work" class="label-all label-work">Work</li>
+            <li data-id="study" class="label-all label-study">Study</li>
+            <li data-id="sport" class="label-all label-sport">Sports</li>
+        </ul>
+
+        <button onclick="addTask()" id="bt-add-task">Add Task</button>
+    </section>
+
+    <section class="main">
+        <aside>
+            <ul id="categories">
+                <li data-id="all" class="task-category">All Tasks</li>
+                <li data-id="fav" class="task-category">Favourites</li>
+                <li data-id="gro" class="task-category">Groceries</li>
+                <li data-id="work" class="task-category">Work</li>
+                <li data-id="study" class="task-category">Study</li>
+                <li data-id="sport" class="task-category">Sports</li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="main-header">
+                <h1>All Tasks</h1>
+                <h2 id="add-task">+</h2>
+            </div>
+
+            <input id="search-task" type="text" maxlength="20" placeholder="Search Task">
+            <ul id="taskList"></ul>
+        </main>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
