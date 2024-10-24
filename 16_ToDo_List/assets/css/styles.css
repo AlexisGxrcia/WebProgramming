@@ -178,7 +178,7 @@ main {
     color: white;
 }
 
-.label-gro {
+.label-hobby {
     background-color: #28a745;
     color: white;
 }
@@ -196,4 +196,27 @@ main {
 .label-study {
     background-color: #fd7e14;
     color: white;
+}
+
+@media (max-width: 480px) {
+    .main {
+        grid-template-columns: minmax(100px, 1fr);
+        grid-template-rows: 100px 1fr;
+    }
+
+    aside {
+        padding: 0 0;
+    }
+
+    #categories {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 407px) {
+    .main {
+        grid-template-rows: 150px 1fr;
+    }
 }
