@@ -206,6 +206,8 @@ main {
 
     aside {
         padding: 0 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.28);
+        border-right: none;
     }
 
     #categories {
@@ -218,5 +220,17 @@ main {
 @media (max-width: 407px) {
     .main {
         grid-template-rows: 150px 1fr;
+    }
+}
+
+@media (max-width: 237px) {
+    .main {
+        grid-template-rows: 210px 1fr;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        margin: 50px 0;
     }
 }
